@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Tests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        main {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 0.5rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to English Tests</h1>
+        <p>Practice and improve your English skills with our interactive tests!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tests">Tests</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#materials">Materials</a>
+    </nav>
+
+    <main>
+        <section id="home" class="container">
+            <h2>About This Site</h2>
+            <p>This platform offers a variety of English tests to help you practice grammar, vocabulary, reading, and listening skills. Choose your level and start testing your knowledge!</p>
+        </section>
+
+        <section id="tests" class="container">
+            <h2>Select a Test</h2>
+            <ul>
+                <li><a href="#">Grammar Test</a></li>
+                <li><a href="#">Vocabulary Test</a></li>
+                <li><a href="#">Reading Comprehension</a></li>
+                <li><a href="#">Listening Practice</a></li>
+            </ul>
+        </section>
+
+        <section id="results" class="container">
+            <h2>Your Results</h2>
+            <p>Track your progress and see detailed feedback on completed tests.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or suggestions, feel free to reach out!</p>
+        </section>
+
+        <section id="login" class="container">
+            <h2>Login</h2>
+            <div class="form-container">
+                <form action="/admin" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="admin" class="container">
+            <h2>Admin Panel</h2>
+            <p>Welcome to the admin panel. Here you can manage tests, view user statistics, and update content.</p>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <p>Explore my previous works and projects.</p>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </section>
+
+        <section id="materials" class="container">
+            <h2>Online Materials</h2>
+            <p>Here you can create, upload, or manage online materials.</p>
+            <div class="form-container">
+                <form action="/materials" method="POST">
+                    <label for="material">Add New Material:</label>
+                    <input type="text" id="material" name="material" placeholder="Enter material name" required>
+
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file" required>
+
+                    <button type="submit">Add Material</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 English Tests. All rights reserved.</p>
+    </footer>
+</body>
+</html>
